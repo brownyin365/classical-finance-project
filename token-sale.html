@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:#000;
+}
+    </style>
+</head>
+
+<body>
+    <!-- <canvas></canvas> -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#070707">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/Classical.png" alt="" srcset=""
+                    style="width: 100px; height: 70px; margin-top: -28px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: #FFE200; border-radius: 5px"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index-class.html" style="color:#ffffff; margin-top: 10px; padding-left: 70px;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color:#ffffff; margin-top: 10px; padding-left: 70px;">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="token-sale.html" style="color:#ffffff; margin-top: 10px; padding-left: 60px;">Token Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:#ffffff; margin-top: 10px; padding-left: 70px;">Whitepaper</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                       <a href=""> <img class="nav-link" src="/assets/img/vectors/dis.svg" alt="" srcset=""> </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a href=""> <img class="nav-link" src="/assets/img/vectors/tele.svg" alt="" srcset=""> </a>
+                    </li>
+                </ul>
+                <form>
+                    <button class="btn" type="submit" style=" margin-top: 10px; margin-left: 40px;">Buy Token</button>
+                </form>
+            </div>
+        </nav>
+        <br><br>
+        <div>
+            <h1 class="token">Token Sale</h1>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="hero-background"></div>
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-6">
+                <div class="image-token d-none d-md-block">
+                    <img class="text-center" src="/assets/img/vectors/tokens.png" alt="" style="
+                    width: 585px;
+                    height: 404px;
+                    ">
+                </div>
+            </div>
+            <div class="col-md-3">
+
+            </div>
+        </div>
+        <br><br><br>
+        <!-- <div>
+            <h1 class="feature-main">FEATURES</h1>
+        </div> -->
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-card border"
+                    style="width: 18rem; height: 420px; background-color: #0E0E0E;border-radius: 30px;">
+                    <div class="card__top">
+                        <br>
+                            <img src="/assets/img/vectors/secure.png" alt="">
+                            
+                        <br><br><br>
+                        <h1 class="feature-head text-center"> Safe & Secure </h1>
+                        <br><br>
+                        <p class="card-text text-white" style="padding: 20px"> While there are projects that 
+                            have promised to promote 
+                            token value with buy back and
+                            burn mechanism, they often 
+                            shrewdly fail to keep the 
+                            promise of sending their
+                            buyback and LP tokens to a 
+                            dead address (blackhole).
+                            <div class="card-under"></div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card border"
+                    style="width: 18rem; height: 420px; background-color: #0E0E0E;border-radius: 30px;">
+                    <div class="card__top">
+                        <br>
+                            <img src="/assets/img/vectors/buy.png" alt="">
+                        
+                        <br><br><br>
+                        <h1 class="feature-head"> Buy & Sell </h1>
+                        <br><br>
+                        <p class="card-text text-white" style="padding: 20px"> We will implement a Multi-Sig
+                            on Classical Trust, using Gnosis
+                            secure multisig implementation.
+                            This will boost security and
+                            ensures that the community is
+                            trusted with the wallet and are 
+                            up-to-date with activities therein. 
+                            <div class="card-under"></div>
+                        </p>
+                    </div>
+                    <div class="bord"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card border"
+                    style="width: 18rem; height: 420px; background-color: #0E0E0E;border-radius: 30px;">
+                    <div class="card__top">
+                        <br>
+                        <img src="/assets/img/vectors/support.png" alt="">
+                        <br><br><br>
+                        <h1 class="feature-head"> 24/7 Support </h1>
+                        <br><br>
+                        <p class="card-text text-white" style="padding: 20px"> We will implement a DAO
+                            system with the Classical Trust. 
+                            The community will decide 
+                            where and when the Classical 
+                            Trust wallet is used. Free from 
+                            any third party, developers or
+                             administrator’s manipulation. 
+                             <div class="card-under"></div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+
+        <!-- <div>
+            <h1 class="text-center overview-heading">CLASSICAL FINANCE <span style="color: #FF9700">OVERVIEW</span></h1>
+        </div> -->
+        <br><br><br>
+        <div class="row border" style="border-radius:10px">
+            <div class="col-md-4">
+               
+            </div>
+            <div class="col-md-4 text-center">
+                <h1 class="token-timer-card">TOKEN PRESALE</h1>
+                <h3 class="text-white">Starts on</h3>
+                <h1 class="month">November 3rd</h1>
+                
+                <h1 class="text-white" id="demo"></h1>
+                <h4 class="text-white">Contribution received</h4>
+
+                <h4 class="text-white">0$ <span>0.00 CLA</span></h4>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+        <br><br><br>
+        <div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="token-alloc">Token Allocation Summary</h1>
+                    <p class="text-white">
+                        Warmly little before cousin sussex entire men
+                        set. Blessing it ladyship on sensible judgment 
+                        settling outweigh. Worse linen an of civil jokes 
+                        leave offer. Parties all clothes removal cheered 
+                        calling prudent her. And residence for met the 
+                        estimable disposing. Mean if he they been no 
+                        hold.</p>
+                        <br><br>
+                        <img src="/assets/img/vectors/chart-color.png" alt="" srcset="">
+                </div>
+                <div class="col-md-6 d-none d-md-block">
+                    <img src="/assets/img/vectors/chart.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+       </div>
+    <span class="overview-background"></span>
+
+    
+    <div class="container-fluid d-none d-md-block">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <br><br><br><br><br><br>
+                <p class="sub-head">
+                    Subscribe To Newsletter
+                </p>
+                <br><br><br>
+                <div>
+                    <input class="sub-input" type="text"><span> <button class="sub-butt">Subscribe</button> </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div> 
+    <br><br><br><br><br>
+    <div class="row first-footer">
+        <div class="col-md-4">
+            <br>
+            <p class="comm text-center" style="font-weight: 700;font-size: 16px;line-height: 10px;color: rgba(7, 7, 7, 0.3);">
+                Join Community
+                <span> <img src="/assets/img/vectors/facebook.png" alt="" srcset=""> </span>
+                <span> <img src="/assets/img/vectors/discord.png" alt="" srcset=""> </span>
+                <span> <img src="/assets/img/vectors/medium.png" alt="" srcset=""> </span>
+                <span> <img src="/assets/img/vectors/twitter.png" alt="" srcset=""> </span>
+            </p>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+    <div class="d-none d-md-block">
+        <div class="row second-footer">
+            <div class="col-md-4">
+                <br><br>
+                <h1>About</h1>
+                <br><br>
+                <h2>
+                    Contact <br>
+                    Community <br>
+                    CLASSIC Token <br>
+                </h2>
+            </div>
+            <div class="col-md-4">
+                <br><br>
+                <h1>Guide</h1>
+                <br><br>
+                <h2>
+                    Secure Wallet <br>
+                    Buy And Sell Coins <br>
+                    Avoid Scams <br>
+                </h2>
+            </div>
+            <div class="col-md-4">
+                <br><br>
+                <h1>Useful Links</h1>
+                <br><br>
+                <h2>
+                    Terms Of Service <br>
+                    Privacy Policy <br>
+                    Disclosures <br>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <p style="color: #ffffff; text-align:center;">Copyright 2022 Classic Finance. All Rights Reserved.</p>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+        <script src="/assets/js/canvas.js"></script>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+                
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+                
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (10000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              // Output the result in an element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+                
+              // If the count down is over, write some text 
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+</body>
+
+</html>

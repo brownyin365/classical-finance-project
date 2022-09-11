@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+   
+
+       <!-- Favicon -->
+       <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon_io/apple-touch-icon.png">
+       <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon_io/as/favicon-32x32.png">
+       <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon_io/favicon-16x16.png">
+       <link rel="manifest" href="/assets/img/favicon_io/site.webmanifest">
+   
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- <title>Document</title> -->
+
+    <style>
+        canvas {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#070707;">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/Classical.png" alt="" srcset=""
+                    style="width: 100px; height: 70px; margin-top: -28px; margin-right: 190px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: #FFE200; border-radius: 5px; width: 40px"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index-class.html" style="color:#ffffff; margin-top: 10px; padding-left: 70px;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color:#ffffff; margin-top: 10px; padding-left: 70px;">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="token-sale.html" style="color:#ffffff; margin-top: 10px; padding-left: 60px;">Token Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:#ffffff; margin-top: 10px; padding-left: 70px;">Whitepaper</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                       <a href="https://discord.com/invite/sXRaRD8dbG" target="_blank"> <img class="nav-link" src="/assets/img/vectors/dis.svg" alt="" srcset=""> </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a href=""> <img class="nav-link" src="/assets/img/vectors/tele.svg" alt="" srcset=""> </a>
+                    </li>
+                </ul>
+                <form>
+                    <button class="btn" type="submit" style=" margin-top: 10px; margin-left: 40px;">Buy Token</button>
+                </form>
+            </div>
+        </nav>
+
+         <br><br>
+        <div class="row">
+            <div class="hero-yellow-dot"></div>
+            <div class="col-md-6">
+                <div class="hero-side"></div>
+                <div class="">
+                    <h2 class="hero hero-head">Classical <br>
+                        <p class="hero-head2">Finance.</p>
+                    </h2>
+                    <h1 class="" style=" 
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #FFFFFF;">
+                        Classical Finance is an auto-staking and <br>
+                        auto-compounding protocol on BSC, <br>
+                        focusing on the 2 key ethos of any serious <br>
+                        and vision driven project, which are <br>
+                        sustainability and credibility.
+                    </h1>
+                    <br><br>
+                    <a href="#" class="hero-butt">Start Trading Now</a>
+                </div>
+            </div>
+            <div class="hero-background d-none d-md-block"></div>
+            <div class="col-md-6">
+                <div class="d-none d-md-block">
+                    <img class="img-background" src="/assets/img/_Downloader 3.svg" alt="" style="width: 621px;height: 645px;">
+                </div>
+            </div>
+        </div>
+        <br><br><br> 
+    
+        <div>
+            <h1 class="feature-main blurOut">FEATURES</h1>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="feature-card border" style="width: 18rem; height: 430px; background-color: #0E0E0E;border-radius: 30px;">
+                    <br><br><br>
+                    <span class="feature-head text-center">STAKING</span>
+                    <br><br>
+                    <p class="card-text text-white" style="padding: 20px">
+                        Staking is Classical Finance 
+                            principal appreciation mechanism
+                            for incentivizing rebasing. The
+                            protocol's transaction taxes (fees)
+                            and other yield-generating 
+                            resources are used to fund rebase 
+                            incentives. Staking is a passive, 
+                            long-term approach. Your 
+                            cost-entry basis will reduce as 
+                            your interest in 
+                            $CLASSICALFINANCE grows, 
+                            until it approaches zero. 
+                            <div class="card-under"></div>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="feature-card border"
+                    style="width: 18rem; height: 430px; background-color: #0E0E0E;border-radius: 30px;">
+                    <div class="card__top">
+                        <br>
+                        <h1 class="feature-head">  CLASSICAL 5% ETHEREUM REFLECTION TO HOLDERS </h1>
+                        <br>
+                        <p class="card-text text-white" style="padding: 10px"> ClassicalFinance offers 5% Ethereum reflection to reward holders. 
+                            This is borne out of the passion to ensure that our diamond hands community 
+                            members are sufficiently rewarded for their dedication. We keep abreast with 
+                            innovative ideas poised to project Classical Finance as a true leading Defi token. 
+                            <div class="card-under"></div>
+                        </p>
+                    </div>
+                    <div class="bord"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="feature-card border"
+                    style="width: 18rem; height: 430px; background-color: #0E0E0E;border-radius: 30px;">
+                    <div class="card__top">
+                        <br><br><br>
+                        <h1 class="feature-head"> GLOBAL CULTURE NFT </h1>
+                        <br><br>
+                        <p class="card-text text-white" style="padding: 20px"> Inspired by the uniqueness of human cultural diversity and the need to 
+                            celebrate our individual identity and cultural heritage on global stage. 
+                            Classical finance NFT is made to elegantly showcase the various 
+                            pieces of history as NFTS to our eager investors and community. 
+                            Minted with different rarity scale.
+                            <div class="card-under"></div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <div>
+            <h1 class="text-center overview-heading blurOut">CLASSICAL FINANCE <span
+                    style="color: #FF9700">OVERVIEW</span></h1>
+        </div>
+        <br><br><br>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="headings">
+                    <h2 class="title">Buy at low apy</h2>
+                    <span class="hr"></span>
+                    <a class="title text-white">10%</a>
+                </div>
+                <p class="text-white">Automatic LP 2% The Vault 2% Classical Trust 1% Burn 5%</p>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                
+            </div>
+            <div class="col-md-6">
+                <div class="headings">
+                    <h2 class="title">Buy at low apy</h2>
+                    <span class="hr"></span>
+                    <a class="title text-white">10%</a>
+                </div>
+                <p class="text-white">Automatic LP 2% The Vault 2% Classical Trust 1% Burn 5%</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="headings">
+                    <h2 class="title">Buy at low apy</h2>
+                    <span class="hr"></span>
+                    <a class="title text-white">10%</a>
+                </div>
+                <p class="text-white">Automatic LP 2% The Vault 2% Classical Trust 1% Burn 5%</p>
+            </div>
+            <div class="col-md-6">
+                
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-6">
+               
+            </div>
+            <div class="col-md-6">
+                <div class="headings">
+                    <h2 class="title">Buy at low apy</h2>
+                    <span class="hr"></span>
+                    <a class="title text-white">10%</a>
+                </div>
+                <p class="text-white">Automatic LP 2% The Vault 2% Classical Trust 1% Burn 5%</p>
+            </div>
+        </div>
+        <br><br><br>
+
+        <div>
+            <br><br>
+            <div>
+                <h1 class="text-center feature-main blurOut">Benefits for Token Holders</h1>
+            </div>
+            <br><br><br><br>
+            <div class="row">
+                <div class="col-sm-4 col-lg-4">
+                    <div class="feature-card border" style="width: 18rem; background-color: #0E0E0E; height: 350px;">
+                        <div class="card__top">
+                            <br>
+                            <img src="/assets/img/vectors/simple.png" alt="">
+                            <br><br>
+                            <h1 class="feature-head"> Simple Process </h1>
+                            <p class="card-text text-white" style="padding: 20px"> Getting your hands on Classical
+                                Finance
+                                token can be as easy as the click of a
+                                button. You can easily swap on
+                                Pancakwswap or on other exchange
+                                platform we will soon be listed on.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                    <div class="feature-card border" style="width: 18rem; background-color: #0E0E0E; height: 350px;">
+                        <div class="card__top">
+                            <br>
+                            <img src="/assets/img/vectors/powerful.png" alt="" srcset="">
+                            <br><br>
+                            <h1 class="feature-head"> Powerful Hardware </h1>
+                            <p class="card-text text-white" style="padding: 20px"> Our data facility guarantee's the
+                                best
+                                storage option anyone could possibly
+                                want. Eliminating the risks of lose data,
+                                0f fostering a solid, formidable financial
+                                hub that would be the play ground of
+                                mature investors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                    <div class="feature-card border" style="width: 18rem; background-color: #0E0E0E; height: 350px;">
+                        <div class="card__top">
+                            <br>
+                            <img src="/assets/img/vectors/money.png" alt="" srcset="">
+                            <br><br>
+                            <h1 class="feature-head"> Varieties Of Currencies </h1>
+                            <p class="card-text text-white" style="padding: 20px"> Classical Finance will be
+                                exchangeable
+                                withvariety of currencies, BNB, BUSD,
+                                USDT among many more others.
+                                We are creating a decentralised financial
+                                ecosystem that would be the hub of
+                                Defi tokens. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-sm-4 col-lg-4">
+                    <div class="feature-card border" style="width: 18rem; background-color: #0E0E0E; height: 350px;">
+                        <div class="card__top">
+                            <br>
+                            <img src="/assets/img/vectors/safe.png" alt="" srcset="">
+                            <br><br>
+                            <h1 class="feature-head"> Reliable And Safe </h1>
+                            <p class="card-text text-white" style="padding: 20px"> Classical Finance is fully secure
+                                with
+                                topnotch security measures to protect
+                                our investors from malicious attacks
+                                or 3rd party unwarranted access to fund.
+                                We are audited with one of the best
+                                auditing firms on Defi, KYC and all
+                                safety. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                    <div class="feature-card border" style="width: 18rem; background-color: #0E0E0E; height: 350px;">
+                        <div class="card__top">
+                            <br>
+                            <img src="/assets/img/vectors/globe.png" alt="" srcset="">
+                            <br><br>
+                            <h1 class="feature-head"> Available Worldwide </h1>
+                            <br>
+                            <p class="card-text text-white" style="padding: 20px"> Classical Finance service is
+                                available
+                                in all the countries with access to the
+                                internet, bringing unique innovative
+                                ideas right next to your doorstep. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                    <div class="feature-card border" style="width: 18rem; background-color: #0E0E0E; height: 350px;">
+                        <div class="card__top">
+                            <br>
+                            <img src="/assets/img/vectors/support.png" alt="" srcset="">
+                            <br><br>
+                            <h1 class="feature-head"> Benefits For Token Holders </h1>
+                            <br>
+                            <p class="card-text text-white" style="padding: 20px"> We have a lot of powerful
+                                service that you can get.
+                                Check for more of our available
+                                services in our product. </p>
+                            <!-- <br><br>
+                                <div class="" style="margin-top: 15px; padding-top: 7px; padding-bottom: 12px; background-color: #FF9700; border-radius: 20px;">Explore More</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br>
+        <div class="row">
+           <div class="col-md-4">
+               <span class="hero-yellow-dot"></span>
+               <h1 class="text-white roadmap-heading">Phase1</h1>
+               <br><br>
+               <p class="roadmap-year">2023 Q1:</p>
+               <p class="text-white">
+                   -Creation of Classical Finance <br>
+                   Smart Contract <br>
+                   -Private Sale (OG) <br>
+                   -Application for KYC <br>
+                   -Application for Contract Audit <br>
+                   -Presale (WL) <br>
+                   -Strategic Partnerships <br>
+                   -Marketing <br>
+                   -Stealth Launch on Titano <br>
+                   -AMA <br>
+               </p>
+           </div>
+           <div class="col-md-4">
+               <span class="hero-yellow-dot"></span>
+               <h1 class="roadmap-heading">Phase2</h1>
+               <br><br>
+               <p class="roadmap-year">2023 Q2:</p>
+               <p class="text-white">
+
+                   -NFT release <br>
+                   -CoinMarketCap Listing <br>
+                   -CoinGecko Listing <br>
+                   -Twitter/Discord Marketing <br>
+               </p>
+           </div>
+
+           <div class="col-md-4">
+               <div class="hero-yellow-dot"></div>
+               <h1 class="roadmap-heading">Phase3</h1>
+               <br><br>
+               <p class="roadmap-year">2023 Q2:</p>
+               <p class="text-white">
+                   Bridging <br>
+                   -Development of <br>
+                   Smart exchange <br>
+               </p>
+           </div>
+       </div>
+       <br><br>
+       <div class="row">
+           <div class="col-md-6 col-md-4">
+               <span class="hero-yellow-dot"></span>
+               <span class="hero-yellow-dot"></span>
+               <h1 class="roadmap-heading">Phase4</h1>
+               <br><br>
+               <p class="roadmap-year">2023 Q1:</p>
+               <p class="text-white">
+                   -Eliminating Rug pulls in Bsc <br>
+                   -Listing Bsc Projects <br>
+               </p>
+           </div>
+           <div class="col-md-6 col-md-4">
+               <span class="hero-yellow-dot"></span>
+               <h1 class="roadmap-heading">Phase5</h1>
+               <br><br>
+               <p class="roadmap-year">2023 Q2:</p>
+               <p class="text-white">
+                   -Listing other blockchains <br>
+               </p>
+           </div>
+       </div> 
+</div>
+
+ <div class="container-fluid d-none d-md-block">
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <br><br><br><br><br><br>
+            <p class="sub-head">
+                Subscribe To Newsletter
+            </p>
+            <br><br><br>
+            <div>
+                <input class="sub-input" type="text"><span> <button class="sub-butt">Subscribe</button> </span>
+            </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+</div> 
+<br><br><br><br><br>
+<div class="row first-footer">
+    <div class="col-md-4">
+        <br>
+        <p class="comm text-center"
+            style="font-weight: 700;font-size: 16px;line-height: 10px;color: rgba(7, 7, 7, 0.3);">
+            Join Community
+            <span> <img src="/assets/img/vectors/facebook.png" alt="" srcset=""> </span>
+            <span> <a href="https://discord.com/invite/sXRaRD8dbG" target="_blank"><img src="/assets/img/vectors/discord.png" alt="" srcset=""> </a></span>
+            <span> <img src="/assets/img/vectors/medium.png" alt="" srcset=""> </span>
+            <span><a href="https://twitter.com/ClassicalFinanc" target="_blank"><img src="/assets/img/vectors/twitter.png" alt="" srcset=""></a></span>
+        </p>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+
+    </div>
+</div>
+<div class="d-none d-md-block">
+    <div class="row second-footer">
+        <div class="col-md-4">
+            <br><br>
+            <h1>About</h1>
+            <br><br>
+            <h2>
+                Contact <br>
+                Community <br>
+                CLASSIC Token <br>
+            </h2>
+        </div>
+        <div class="col-md-4">
+            <br><br>
+            <h1>Guide</h1>
+            <br><br>
+            <h2>
+                Secure Wallet <br>
+                Buy And Sell Coins <br>
+                Avoid Scams <br>
+            </h2>
+        </div>
+        <div class="col-md-4">
+            <br><br>
+            <h1>Useful Links</h1>
+            <br><br>
+            <h2>
+                Terms Of Service <br>
+                Privacy Policy <br>
+                Disclosures <br>
+            </h2>
+        </div>
+    </div>
+</div>
+</div> 
+<p style="color: #ffffff; text-align:center;">Copyright 2022 Classic Finance. All Rights Reserved.</p>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<script src="/assets/js/canvas.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        canvas {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas></canvas>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#070707">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/Classical.png" alt="" srcset=""
+                    style="width: 100px; height: 70px; margin-top: -28px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: #FFE200; border-radius: 5px"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index-class.html"
+                            style="color:#ffffff; margin-top: 10px; padding-left: 70px;">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"
+                            style="color:#ffffff; margin-top: 10px; padding-left: 70px;">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="token-sale.html"
+                            style="color:#ffffff; margin-top: 10px; padding-left: 60px;">Token Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                            style="color:#ffffff; margin-top: 10px; padding-left: 70px;">Whitepaper</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a href=""> <img class="nav-link" src="/assets/img/vectors/dis.svg" alt="" srcset=""> </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a href=""> <img class="nav-link" src="/assets/img/vectors/tele.svg" alt="" srcset=""> </a>
+                    </li>
+                </ul>
+                <form>
+                    <button class="btn" type="submit" style=" margin-top: 10px; margin-left: 40px;">Buy Token</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="row contact">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+                <br>
+                <div>
+                    <h1 class="feature-main">Contact Us</h1>
+                </div>
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+                            <div>
+                                <label for="name" class="contact-label">Your name</label>
+                            </div>
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="contact-input">
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>
+                                <label for="subject text-white" class="contact-label">Subject</label>
+                            </div>
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="contact-input">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-12">
+                            <div>
+                                <label for="message text-white" class="contact-label">Your message</label>
+                            </div>
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="8"
+                                    class="md-textarea"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                    <br><br>
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary contact-butt"
+                            onclick="document.getElementById('contact-form').submit();">Send</a>
+                    </div>
+                </form>
+                <br><br><br>
+            </div>
+            <div class="col-md-3">
+
+            </div>
+            <br><br>
+        </div>
+        <br><br><br><br>
+    </div>
+    <div class="container-fluid d-none d-md-block">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <br><br><br><br><br><br>
+                <p class="sub-head">
+                    Subscribe To Newsletter
+                </p>
+                <br><br><br>
+                <div>
+                    <input class="sub-input" type="text"><span> <button class="sub-butt">Subscribe</button> </span>
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div> 
+    <br><br><br><br><br>
+    <div class="row first-footer">
+        <div class="col-md-4">
+            <br>
+            <p class="comm text-center"
+                style="font-weight: 700;font-size: 16px;line-height: 10px;color: rgba(7, 7, 7, 0.3);">
+                Join Community
+                <span> <img src="/assets/img/vectors/facebook.png" alt="" srcset=""> </span>
+                <span> <img src="/assets/img/vectors/discord.png" alt="" srcset=""> </span>
+                <span> <img src="/assets/img/vectors/medium.png" alt="" srcset=""> </span>
+                <span> <img src="/assets/img/vectors/twitter.png" alt="" srcset=""> </span>
+            </p>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+    <div class="d-none d-md-block">
+        <div class="row second-footer">
+            <div class="col-md-4">
+                <br><br>
+                <h1>About</h1>
+                <br><br>
+                <h2>
+                    Contact <br>
+                    Community <br>
+                    CLASSIC Token <br>
+                </h2>
+            </div>
+            <div class="col-md-4">
+                <br><br>
+                <h1>Guide</h1>
+                <br><br>
+                <h2>
+                    Secure Wallet <br>
+                    Buy And Sell Coins <br>
+                    Avoid Scams <br>
+                </h2>
+            </div>
+            <div class="col-md-4">
+                <br><br>
+                <h1>Useful Links</h1>
+                <br><br>
+                <h2>
+                    Terms Of Service <br>
+                    Privacy Policy <br>
+                    Disclosures <br>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <p style="color: #ffffff; text-align:center;">Copyright 2022 Classic Finance. All Rights Reserved.</p>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/canvas.js"></script>
+</body>
+
+</html>
